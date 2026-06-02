@@ -20,6 +20,11 @@ Oleh karena itu, proyek ini adalah contoh nyata pemecahan masalah teknis (*CORS 
 
 Berikut adalah cuplikan jalannya aplikasi ketika dijalankan di localhost:
 
+
+https://github.com/user-attachments/assets/97be5ed8-c6b4-4def-a5ec-8774f4413f0f
+
+
+
 <!-- Di bawah ini akan merender video secara langsung di GitHub setelah Anda meletakkan file video Anda -->
 <video src="assets/demo.mp4" controls width="100%">
   Browser Anda tidak mendukung tag video. Silakan lihat video demo langsung di folder `assets/demo.mp4`.
