@@ -2,12 +2,12 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss(), // Tailwind v4 — no tailwind.config.js needed
-  ],
+  plugins: [react(), // Tailwind v4 — no tailwind.config.js needed
+  tailwindcss(), cloudflare()],
   server: {
     proxy: {
       // Proxy /api requests to stats.nba.com directly for local dev
