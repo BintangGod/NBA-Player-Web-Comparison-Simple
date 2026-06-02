@@ -21,7 +21,7 @@ Oleh karena itu, proyek ini adalah contoh nyata pemecahan masalah teknis (*CORS 
 Berikut adalah cuplikan jalannya aplikasi ketika dijalankan di localhost:
 
 <!-- Di bawah ini akan merender video secara langsung di GitHub setelah Anda meletakkan file video Anda -->
-<video src="assets/demo.mp4" controls width="100%" poster="public/profile.jpg" style="border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+<video src="assets/demo.mp4" controls width="100%">
   Browser Anda tidak mendukung tag video. Silakan lihat video demo langsung di folder `assets/demo.mp4`.
 </video>
 
