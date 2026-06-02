@@ -12,20 +12,20 @@ Server resmi NBA (`stats.nba.com`) menerapkan sistem keamanan yang sangat ketat 
 1. **Memblokir IP Cloud Provider:** Server NBA mendeteksi dan memblokir permintaan data yang berasal dari IP Cloudflare, AWS, Vercel, dan penyedia cloud lainnya. Akibatnya, deployment serverless proxy di cloud akan menghasilkan error *blocking*.
 2. **Tanpa Batasan di Localhost:** Di komputer lokal (localhost), kita dapat menggunakan **Vite Proxy** untuk mem-bypass batasan CORS. Dengan menyematkan header resmi (`User-Agent` & `Referer` dari browser asli), localhost dapat menarik data langsung dari server resmi NBA secara instan tanpa membutuhkan API Key premium yang berbayar!
 
-Oleh karena itu, proyek ini adalah contoh nyata pemecahan masalah teknis (*CORS bypass via local proxy headers*) yang sangat cocok dijadikan sebagai **bahan demo portfolio teknis** Anda.
+Oleh karena itu, proyek ini adalah contoh nyata pemecahan masalah teknis (*CORS bypass via local proxy headers*) yang sangat cocok dijadikan sebagai bahan demo portofolio teknis.
 
 ---
 
 ## 📷 Localhost Video Demo
 
-Berikut adalah cuplikan jalannya aplikasi ketika dijalankan di localhost komputer Anda:
+Berikut adalah cuplikan jalannya aplikasi ketika dijalankan di localhost:
 
 <!-- Di bawah ini akan merender video secara langsung di GitHub setelah Anda meletakkan file video Anda -->
 <video src="assets/demo.mp4" controls width="100%" poster="public/profile.jpg" style="border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
   Browser Anda tidak mendukung tag video. Silakan lihat video demo langsung di folder `assets/demo.mp4`.
 </video>
 
-> 💡 **Petunjuk bagi Pengunjung Repo:** Untuk melihat aplikasi ini berjalan secara langsung dengan data ter-update, ikuti panduan instalasi di bawah ini untuk menjalankannya di localhost Anda.
+> 💡 **Petunjuk bagi Pengunjung Repo:** Untuk melihat aplikasi ini berjalan secara langsung dengan data ter-update, ikuti panduan instalasi di bawah ini untuk menjalankannya secara lokal.
 
 ---
 
@@ -53,11 +53,11 @@ Berikut adalah cuplikan jalannya aplikasi ketika dijalankan di localhost kompute
 
 ## 🚀 Panduan Instalasi Lokal
 
-Ikuti langkah mudah berikut untuk menjalankan proyek ini di komputer Anda:
+Ikuti langkah mudah berikut untuk menjalankan proyek ini secara lokal:
 
 ### 1. Clone & Masuk ke Folder Proyek
 ```bash
-git clone <url-repositori-anda>
+git clone https://github.com/BintangGod/NBA-Player-Web-Comparison-Simple.git
 cd nba-comparison
 ```
 
@@ -72,23 +72,4 @@ npm run dev
 ```
 
 ### 4. Buka di Browser
-Akses **[http://localhost:5173](http://localhost:5173)**. Anda siap melakukan analisis dan perbandingan pemain NBA secara real-time!
-
----
-
-## 📹 Cara Membuat & Memasukkan Video Demo Anda
-
-Agar halaman repositori Anda terlihat sangat profesional, Anda bisa merekam layar localhost Anda dan memasukkannya ke dalam repositori dengan langkah berikut:
-
-### Langkah 1: Rekam Layar Komputer Anda
-1. Jalankan aplikasi di localhost (`npm run dev`) dan buka di browser.
-2. Di Windows, tekan **`Win + Alt + R`** untuk langsung mulai merekam layar menggunakan *Windows Game Bar*, atau gunakan aplikasi gratis seperti **OBS Studio** / **ShareX**.
-3. Lakukan demo singkat (misal: mencari nama "LeBron James", membandingkannya dengan "Stephen Curry", mengganti grafik ke Radar Chart, dan melihat lini masa karir).
-4. Selesai merekam, tekan tombol stop. Video biasanya tersimpan di folder `Videos/Captures`.
-
-### Langkah 2: Pindahkan Video ke Project
-1. Ubah nama file rekaman Anda menjadi **`demo.mp4`**.
-2. Pindahkan atau salin file `demo.mp4` tersebut ke dalam folder **`assets/`** yang ada di dalam proyek ini.
-
-### Langkah 3: Push ke GitHub
-Lakukan commit dan push ke repositori GitHub Anda. Video tersebut akan langsung bisa diputar oleh siapa saja yang mengunjungi repositori Anda!
+Akses **[http://localhost:5173](http://localhost:5173)** untuk melakukan analisis dan perbandingan pemain NBA secara real-time!
